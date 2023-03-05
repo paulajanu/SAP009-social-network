@@ -8,23 +8,23 @@ const init = () => {
         main.innerHTML = "";
         switch(window.location.hash) {
             case " ":
-            main.appendChild(login());
-            break;
+                main.appendChild(login());
+                break;
             case "#login":
-            main.appendChild(login());
-            break;
+                main.appendChild(login());
+                break;
             case "#reset":
-            main.appendChild(reset());
-            break;
+                main.appendChild(reset());
+                break;
             case "#register":
-            main.appendChild(register());
-            break;      
+                main.appendChild(register());
+                break;      
         }
     })
 }
 
 window.addEventListener("load", () => {
 main.appendChild(login());
-init()
+init();
 })
 

@@ -1,4 +1,5 @@
 export default () => {
+    
     const container = document.createElement("div")
     const template = `
         <div class="main">
@@ -8,9 +9,7 @@ export default () => {
                 experiências! Você poderá seguir todos seus amigos e fazer novos. 
                 Além de registrar a vida do seu cão, você poderá acompanhar 
                 a vida de outros cãezinhos e interagir nas publicações. </p>
-                <a href="#register">
-                    <button class="btn-registrar">registre-se</button>
-                </a>
+                <button class="btn-registrar"><a href="#register">REGISTRE-SE</a></button>
                 <img src="./img/illustrations/social_update.png" class="ilustracao-login" alt="ilustração-login">
             </div>
             <div class="tela-principal">
@@ -19,15 +18,17 @@ export default () => {
                 </div>
                 <div class="estilo-card">
                     <form>
-                        <label for="email">E-mail:</label>
                         <div class="input-card">
                             <i class="fas fa-envelope"></i>
-                            <input type="email" id="email" placeholder="nome@hotmail.com" minlength="4" required />
+                            <label for="email" class="label-entrar">
+                                <input type="email" id="email" placeholder="email@dominio.com" minlength="4" required />
+                            </label>
                         </div>
-                        <label for="password">Senha:</label>
                         <div class="input-card">
                             <i class="fas fa-lock"></i>
-                            <input type="password" id="password" placeholder="******" required/>
+                            <label for="password" class="label-entrar">
+                                <input type="password" id="password" placeholder="••••••" minlength="6" required/>
+                            </label>
                         </div>
                         <p class="texto-centralizado"> Esqueceu sua senha?</p> 
                         <p class="texto-centralizado"><a href="#reset"id="clique-esqueceu">Clique aqui!</a></p>
@@ -43,8 +44,7 @@ export default () => {
                 </div>
             </div>
         </div>
-    ` 
+        ` 
     container.innerHTML = template;
-
     return container; 
 }

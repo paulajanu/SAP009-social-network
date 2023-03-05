@@ -28,7 +28,6 @@ body {
 }
 
 main {
-  padding: 0 0 53px 0;
   width: 100%;
 }
 
@@ -113,7 +112,25 @@ main {
   grid-template-columns: 15% 85%;
 }
 
-.input-card > input {
+.label-esqueceu-senha > input {
+  border-style: none;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  font-size: 16px;
+  color: #783d19;
+}
+
+.label-registro > input {
+  border-style: none;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  font-size: 16px;
+  color: #783d19;
+}
+
+.label-entrar > input {
   border-style: none;
   border: 0;
   outline: 0;
@@ -133,7 +150,6 @@ main {
   border: none;
   border-radius: 20px;
   outline: none;
-  text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 3px;
   color: #783d19;
@@ -153,7 +169,7 @@ main {
   margin-bottom: 10px;
 }
 
-.espaço-acessar{
+.espaço-acessar {
   margin: 5px;
   justify-content: center;
   text-align: center;
@@ -184,7 +200,6 @@ a {
     border: none;
     border-radius: 20px;
     outline: none;
-    text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 3px;
     color: #783d19;
@@ -238,7 +253,6 @@ a {
     border: none;
     border-radius: 20px;
     outline: none;
-    text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 3px;
     color: #783d19;
@@ -248,11 +262,11 @@ a {
     margin-left: 25px;
   }
 
-  .label-esqueceu-senha {
+  /*.label-esqueceu-senha {
       color: #BF5B21;
       display: flex;
       text-align: center;
-  }
+  }*/
 
   .btn-redefinir-senha {
     background-color: #783d19;
@@ -267,7 +281,6 @@ a {
 
   .estilo-card-redefir-senha {
     max-width: 268px;
-    color: var(--laranja);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -277,6 +290,12 @@ a {
     border-radius: 20px;
     box-shadow: 0px 0px 12px #878181;
     box-sizing: border-box;
+  }
+
+  .estilo-card-redefir-senha > p {
+    color: var(--laranja);
+    display: flex;
+    text-align: center;
   }
 
   .espaço-redefinir {
