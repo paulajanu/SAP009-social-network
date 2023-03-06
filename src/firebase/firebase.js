@@ -31,5 +31,4 @@ function cadastro(event, email, senha) {
 
 // login com google
 
-
 export {autenticarUsuario, cadastro}
